@@ -192,9 +192,11 @@ const Main = () => {
                 <span className="text-lg mb-2">بيانات عميل</span>
                 <div className="w-full flex justify-between gap-x-3 border p-2 text-xs">
                   <span>منتجات </span>
-                  {user.data?.cartProducts.map((product) => {
-                    return <img src={product.image} className="w-20" />;
-                  })}
+               
+                    {user.data?.cartProducts.map((product) => {
+                      return <img src={product.image} className="w-20" />;
+                    })}
+                
                 </div>
                 {user.data.cartProducts ? (
                   <div className="w-full flex justify-between gap-x-3 border p-2 text-xs">
